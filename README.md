@@ -24,3 +24,13 @@ The app is now available at http://127.0.0.1:8000.
 php bin/console debug:router   # list routes
 php bin/console cache:clear    # clear the cache
 ```
+
+## The exercise
+
+Read [REQUIREMENTS.md](REQUIREMENTS.md).
+
+Add a controller in `src/Controller/` — routes declared with the `#[Route]` attribute are picked up automatically. Then try it:
+
+```bash
+curl "http://127.0.0.1:8000/coffee_shops?x=47.6&y=-122.4"
+```
